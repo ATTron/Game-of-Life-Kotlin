@@ -1,5 +1,4 @@
 import java.util.Scanner
-@Throws(InterruptedException::class)
 fun main(args:Array<String>) {
 	var input = Scanner(System.`in`)
 	println("Enter in number of rows: ")
