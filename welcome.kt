@@ -8,12 +8,15 @@ fun main(args:Array<String>) {
 	val g = Game(rows, cols)
 	g.fill()
 	var counter = 1
-	while (counter <= 30) {
+	println("How many generations? ")
+	val gens = input.nextInt()
+	while (counter <= gens) {
 		println("Generation " + counter)
 		g.show()
 		g.countN()
 		g.updateGen()
 		Thread.sleep(500)
 		counter++
+		println()
 	}
 }

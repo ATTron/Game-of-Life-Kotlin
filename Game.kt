@@ -1,7 +1,10 @@
 class Game (r:Int, c:Int) {
 	private val grid: Array<CharArray>
 	private val nearby: Array<IntArray>
-	private val glider = arrayOf<CharArray>(charArrayOf('.', '*', '.'), charArrayOf('.', '.', '*'), charArrayOf('*', '*', '*'))
+	private val glider = arrayOf<CharArray>(
+			charArrayOf('.', '*', '.'),
+			charArrayOf('.', '.', '*'),
+			charArrayOf('*', '*', '*'))
 	
 	init {
 		grid = Array<CharArray>(r, {CharArray(c)})
